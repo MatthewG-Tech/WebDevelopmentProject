@@ -6,6 +6,6 @@
         <script src="project.js"></script>
     </head>
     <body>
-
+        <div id="Navigation Bar"></div>
     </body>
 </html>
