@@ -1,5 +1,4 @@
 var navigationElement, footerElement;
-
 function start(){
     initalize();
     navigationElementSetup();
@@ -13,10 +12,10 @@ function initalize(){
 //Create Navigation Bar
 //Inspired by W3 Schools: https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_black_right
 function navigationElementSetup(){
-    var output = "<nav>\n<ul>\n<li><a href=\"index.html\">Matthew Guerra</a></li>\n";
-    output += "<li><a href=\"developer.html\">Developer</a></li>\n";
+    var output = "<nav>\n<ul>\n<li><a href=\"developer.html\">Developer</a></li>\n";
     output += "<li><a href=\"photography.html\">Photography</a></li>\n";
-    output += "<li><a href=\"showProduction.html\">Show Production</a></li>\n";
+    output += "<li id=\"title\"><a href=\"index.html\">Matthew Guerra</a></li>\n";
+    output += "<li><a href=\"production.html\">Production</a></li>\n";
     output += "<li><a href=\"resources.html\">Resources</a></li>\n</ul>\n</nav>";
     navigationElement.innerHTML = output;
 }
