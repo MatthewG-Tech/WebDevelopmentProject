@@ -1,19 +1,24 @@
-
+/**Footer Style for all pages**/
 #footer{
     bottom: 0em;
-    right: 0em;
     position: fixed;
-    
+    right: 0em;
+    color: white;
 }
-#mainContent ul{
+/**Style content for index page**/
+#indexContent ul{
     font-size: 2em;
     list-style: none;
     text-align: center;
     padding-left: 0;
-    padding-top: 9em;
+    padding-top: 20%;
     position: relative;
     vertical-align: middle;
 }
+#mainContent{
+    color: white;
+}
+/**Navigation Style for all pages**/
 #navigationBar{
     font-size: 1.3em;
     position: relative;
@@ -35,9 +40,18 @@
     padding: 0;
     position: relative;
 }
+/**Link style for all pages**/
 a:link, a:visited{
-    color: black;
+    color: white;
     text-decoration: none;
+}
+body {
+    background-color: black;
+    background-image: url(SA_2019_Image.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position-x: 0em;
+    
 }
 
 

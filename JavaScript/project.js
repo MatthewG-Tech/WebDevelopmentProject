@@ -13,7 +13,7 @@ function initalize(){
 //Inspired by W3 Schools: https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_black_right
 function navigationElementSetup(){
     var output = "<nav>\n<ul>\n<li><a href=\"developer.html\">Developer</a></li>\n";
-    output += "<li><a href=\"photography.html\">Photography</a></li>\n";
+    output += "<li><a href=\"photographer.html\">Photographer</a></li>\n";
     output += "<li id=\"title\"><a href=\"index.html\">Matthew Guerra</a></li>\n";
     output += "<li><a href=\"production.html\">Production</a></li>\n";
     output += "<li><a href=\"resources.html\">Resources</a></li>\n</ul>\n</nav>";
