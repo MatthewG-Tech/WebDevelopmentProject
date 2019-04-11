@@ -5,19 +5,23 @@ function start(){
     initalize();
     navigationElementSetup();
     footerSetup();
-    countButton.addEventListener("click",hangman,false);
+    countButton.addEventListener("click",hangmanInitalize,false);
 }
 //Initallize Variables
 function initalize(){
     countButton = document.getElementById("enterButton");
 }
 function hangman(){
-    hangmanInitalize();
+    currentInput = prompt("Enter a letter to guess.");
+    if(validInput(currentInput)){
+
+    }
 }  
 function hangmanInitalize(){
     lives = 5;
     wordLength = prompt("Welcome to Hangman!\nPlease enter the length of a word you would like guess.");
     findWordsByLength(wordLength);
+    hangman();
 }
 function findWordsByLength(length){
     var tempWordList;
@@ -29,6 +33,11 @@ function findWordsByLength(length){
     words = new Array(tempWordList.length);
     for(var i = 0; i < tempWordList.length; i++){
         words[i] = tempWordList[i];
+    }
+}
+fucntion validInput(letter){
+    if(letter == NaN){
+        return false;
     }
 }
 

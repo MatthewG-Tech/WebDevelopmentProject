@@ -17,7 +17,25 @@
 }
 #mainContent{
     color: white;
+    display: inline;
 }
+#mainContent h1{
+    margin-left: 1em;
+    margin-top: 1em;
+}
+#mainContent h1 #center{
+    margin-top: 1em;
+    text-align: center;
+}
+#mainContent div h2{
+    text-align: center;
+}
+#mainContent div{
+    float: left;
+    
+    width: 25em;
+}
+
 /**Navigation Style for all pages**/
 #navigationBar{
     font-size: 1.3em;
@@ -51,7 +69,6 @@ body {
     background-size: auto;
     background-repeat: no-repeat;
     background-position-x: 0em;
-    
 }
 
 
