@@ -24,27 +24,21 @@
 /**Main Content**/
 #mainContent{
     color: white;
-    text-align: center;
     margin: auto;
-    width: 100%;
     padding: 10px;
-    border: 3px solid green;
-}
-#mainContent h1{
-    margin-top: 1em;
-}
-#mainContent h1 #center{
-    margin-top: 1em;
     text-align: center;
+    width: 100%;
 }
-#mainContent div h2{
-    text-align: center;
+#mainContent #description{
+    margin: 0 auto;
+    margin-bottom: 1em;
+    width: 30em;
 }
 #mainContent article{
-    border: 3px solid green;
     display: inline-grid;
+    height: auto;
     width: 30em;
-    height: 40em;
+    margin:0 1em;
 }
 #mainContent div{
     float: left;
@@ -53,6 +47,23 @@
     margin-left: 2.3em;
     width: 30em;
 }
+#mainContent form{
+    text-align: left;
+}
+#mainContent h1{
+    margin-top: 1em;
+}
+#mainContent h2{
+    height: 1em;
+}
+#mainContent li{
+    margin: 0.5em 1em;
+}
+#mainContent ul{
+    list-style: none;
+    text-align: left;
+}
+
 /**End of Main Content**/
 
 /**Navigation Style for all pages**/
@@ -85,6 +96,5 @@ a:link, a:visited{
     text-decoration: none;
 }
 body {
-    background-color: black;
-    
+    background-color: black; 
 }
