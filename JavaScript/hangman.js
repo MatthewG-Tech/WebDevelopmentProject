@@ -1,4 +1,4 @@
-var countButton;
+var enterButton;
 var lives, words, entertedLetters, currentInput, chosenWord, revealedWord, wordLength;
 lives = 5;
 function start(){
@@ -9,7 +9,7 @@ function start(){
 }
 //Initallize Variables
 function initalize(){
-    countButton = document.getElementById("enterButton");
+    enterButton = document.getElementById("enterButton");
 }
 function hangman(){
     currentInput = prompt("Enter a letter to guess.");
@@ -35,8 +35,8 @@ function findWordsByLength(length){
         words[i] = tempWordList[i];
     }
 }
-fucntion validInput(letter){
-    if(letter == NaN){
+function validInput(letter){
+    if(isNaN(letter)){
         return false;
     }
 }

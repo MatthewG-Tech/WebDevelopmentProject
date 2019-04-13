@@ -20,7 +20,7 @@ function navigationElementSetup(){
     navigationElement.innerHTML = output;
 }
 function footerSetup(){
-    var output = "<footer>\nMatthew Guerra &copy; 2019\n</footer>";
+    var output = "<footer>\nMatthew Guerra &copy; 2019  \n</footer>";
     footerElement.innerHTML = output;
 }
 window.addEventListener("load",start,false);

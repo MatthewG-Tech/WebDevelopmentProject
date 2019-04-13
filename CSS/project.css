@@ -1,10 +1,15 @@
 /**Footer Style for all pages**/
 #footer{
+    background-color: black;
     bottom: 0em;
-    position: fixed;
-    right: 0em;
     color: white;
+    position: fixed;
+    text-align: left;
+    width: 100%;
+    
 }
+/**End Footer**/
+
 /**Style content for index page**/
 #indexContent ul{
     font-size: 2em;
@@ -15,12 +20,17 @@
     position: relative;
     vertical-align: middle;
 }
+
+/**Main Content**/
 #mainContent{
     color: white;
-    display: inline;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    border: 3px solid green;
 }
 #mainContent h1{
-    margin-left: 1em;
     margin-top: 1em;
 }
 #mainContent h1 #center{
@@ -30,11 +40,20 @@
 #mainContent div h2{
     text-align: center;
 }
+#mainContent article{
+    border: 3px solid green;
+    display: inline-grid;
+    width: 30em;
+    height: 40em;
+}
 #mainContent div{
     float: left;
-    
-    width: 25em;
+    margin-right: 2em;
+    margin-top: 1em;
+    margin-left: 2.3em;
+    width: 30em;
 }
+/**End of Main Content**/
 
 /**Navigation Style for all pages**/
 #navigationBar{
@@ -58,6 +77,8 @@
     padding: 0;
     position: relative;
 }
+/**End Navigation**/
+
 /**Link style for all pages**/
 a:link, a:visited{
     color: white;
@@ -65,11 +86,5 @@ a:link, a:visited{
 }
 body {
     background-color: black;
-    background-image: url(SA_2019_Image.png);
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position-x: 0em;
+    
 }
-
-
-
