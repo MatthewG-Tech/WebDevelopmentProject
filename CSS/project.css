@@ -25,10 +25,11 @@
 #mainContent{
     color: white;
     margin: auto;
-    padding: 10px;
+    padding: 1em;
     text-align: center;
     width: 100%;
 }
+
 #mainContent #description{
     margin: 0 auto;
     margin-bottom: 1em;
@@ -49,6 +50,9 @@
 }
 #mainContent form{
     text-align: left;
+}
+#mainContent #game{
+    text-align: center;
 }
 #mainContent h1{
     margin-top: 1em;

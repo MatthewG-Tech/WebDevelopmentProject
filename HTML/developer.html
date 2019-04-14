@@ -5,30 +5,32 @@
         <link rel="stylesheet" type="text/css" href="../CSS/project.css">
         <meta charset="utf-8"/>
         <script src="../JavaScript/project.js"></script>
+        <script src="../JavaScript/hangman.js"></script>
         <title>Matthew Guerra</title>
     </head>
     <body>
         <div id="navigationBar"></div>
         
-        
         <div id="mainContent">
                 <h1>Developer</h1>
                 <article>
-                    <h2>Evil Hangman</h2>
-                    <form action = "#">
-                        <h2>Input:<input id="enterButton" type="button" value="Enter"/></h2>
-                        <p>
-                            <textarea id="inputElement" rows="1" cols="16">Enter your text here...</textarea>
-                        </p>
-                        <h2>Results:</h2>
-                        <div id="outputElement"></div>
-                    </form>
+                    <form id="game" action="#">
+                        <h2>Evil Hangman</h2>
+                        <p>Evil Hangman was the first major game that I created when I learned how to program. Instead of a typical game of hangman, the computer never choses a word and removes all words that contain the letter you picked until thier are no more options. Once thier are no more options, the compter will give you a letter and will reapeat the process again.</p>
+                        <input id="startButton" type="button" width="10em" value="Start Game"/>  
+                    </form>             
                 </article>
                 <article>
-                        <p>I have experience creating websites, mobile applications, and computer applications using HTML, JavaScript, CSS, Java, Ruby, Phython and Swift. I have created applications for business and personal use. I have also developed machine learning applications using OpenAI's Gym. </p>
-                        <p><a href="https://github.com/MatthewG-Tech">GitHub: MatthewG-Tech</a></p>
-                    </article>
-            </div>
+                    <h2>Experience</h2>
+                    <p>I have experience creating websites, mobile applications, 
+                        and computer applications using HTML, JavaScript, CSS, Java, 
+                        Ruby, Phython and Swift. I have created applications for business 
+                        and personal use. I have also developed machine learning applications 
+                        using OpenAI's Gym. </p>
+                    <p><a href="https://github.com/MatthewG-Tech">GitHub: MatthewG-Tech</a></p>
+                </article>
+        </div>
+        
         <div id="footer"></div>
         
     </body>
