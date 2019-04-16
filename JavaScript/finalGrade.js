@@ -9,12 +9,6 @@ function start(){
     submit.addEventListener("click",validate,false);
 }
 function validate(){
-    console.log(isNaN(desieredPercentage.value));
-    console.log(desieredPercentage.value);
-    console.log(isNaN(finalPercentage.value));
-    console.log(finalPercentage.value);
-    console.log(isNaN(currentGrade.value));
-    console.log(currentGrade.value);
     if(isNaN(desieredPercentage.value)  || desieredPercentage.value == "" || isNaN(finalPercentage.value) || finalPercentage.value == ""|| isNaN(currentGrade.value) || currentGrade.value == ""){
         alert("Not a valid input, try again.")
     }else{

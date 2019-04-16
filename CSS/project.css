@@ -92,6 +92,12 @@
     padding: 0;
     position: relative;
 }
+@media screen and (max-width: 1310px){
+    #navigationBar li{
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}
 /**End Navigation**/
 
 /**Link style for all pages**/
