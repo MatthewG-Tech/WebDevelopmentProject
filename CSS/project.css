@@ -16,7 +16,8 @@
     height: 100%;
     width: 50%;
     text-align: center;
-    padding-top: 15em;
+    padding-top: 6em;
+    padding-bottom: 6em;
 }
 
 /**Main Content**/
@@ -41,6 +42,7 @@
 }
 .pageTitle{
     margin: 0em;
+    padding-bottom: 1em;
 }
 .summary{
     width:30em;  
@@ -55,10 +57,40 @@
     list-style: none;
     padding-left: 0;  
 }
+.mobileExpanded{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    padding-left: 0;
+}
+.mobileExpandedLi{
+    width: 10em;
+    border: none;
+}
+.navExpander{
+    display: none;
+}
+.navMobileSpacer{
+    display: none;
+}
+.navTitle{
+    font-size: 1.5em;
+    width: 12em;
+    
+}
+.navTitleExpanded{
+    border: none;
+}
 .navigationBar{
     font-size: 1.3em; 
     text-align: center;
     width: 100%;
+    border: solid;
+    border-color: white;
+    border-width: 0 0 1px 0;
+    background-color: #222222;
+    padding-top: 0.10em;
 }
 .navigationBar a:hover{
     color:grey;
@@ -66,23 +98,15 @@
 .normalLiNav{
     width: 10em;
 }
-.navExpander{
-    display: none;
-}
-.navTitle{
-    font-size: 1.5em;
-    width: 12em;
-}
 @media screen and (max-width: 800px){
     .horUlNav{
         align-items: baseline;
     }
-    .normalLiNav {
-        display: none;
+    .mobileExpanded{
+        flex-direction: column;
     }
-    .navTitle{
-        font-size: 1.5em;
-        width: 8em;
+    .mobileExpandedLi{
+        display: flex;
     }
     .navExpander {
         display: flex;
@@ -90,33 +114,66 @@
         height: 1em;
     }
     .navMobileSpacer{
+        display: flex;
         visibility: hidden;
         width: 33px;
+        order: -2;
+    }
+    .navTitle{
+        font-size: 1.5em;
+        width: 8em;
+        order: -1;
+    }
+    .navTitleExpanded{
+        font-size: 1.5em;
+        width: 8em;
+        order: -1;
+        border: solid;
+        border-color: white;
+        border-width: 0 0 1px 0;
+    }
+    .normalLiNav {
+        display: none;
     }
     .pageLogo{        
         padding-top: 10em;
+        width: 65%;
+    }
+    .slideshowImage{
+        width: 80%;
+        padding-bottom: 5em;
     }
 }
 @media screen and (max-width: 575px){
-    .navTitle{
-        font-size: 1.5em;
-        width: 5em;
-    }
     .pageLogo{        
         padding-top: 8em;
     }
+    .slideshowImage{
+        width: 90%;
+    }
 }
 @media screen and (max-width: 360px){
-    .navTitle{
-        font-size: 1.5em;
-        width: 3em;
-    }
     .pageLogo{        
         padding-top: 6em;
+    }
+    .slideshowImage{
+        width: 95%;
     }
 }
 /**End Navigation**/
 
+/**Slideshow**/
+.hide{
+    display: none;
+
+}
+.show{
+    display: flex;
+    
+}
+.slideshowImage{
+    width: 50%;
+}
 /**Link style for all pages**/
 a:link, a:visited{
     color: white;
@@ -126,4 +183,5 @@ a:link, a:visited{
 body {
     background-color: black; 
     font-family: tahoma, sans-serif;
+    margin:0;
 }

@@ -18,7 +18,7 @@ function hangman(){
             if(validInput(currentInput)){
                 findWords(currentInput);
             }else{
-                if(confirm("Not a valid input. Please try again.  Click Cancel to exit game.")){
+                if(confirm("Not a valid input. Please try again. Click Cancel to exit game.")){
                     hangman();
                 }
             }
