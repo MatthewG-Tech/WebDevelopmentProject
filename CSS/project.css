@@ -1,5 +1,6 @@
+/**Flex tutorial from https://css-tricks.com/snippets/css/a-guide-to-flexbox/**/
 /**Footer Style for all pages**/
-#footer{
+.footer{
     background-color: black;
     bottom: 0em;
     color: white;
@@ -11,91 +12,107 @@
 /**End Footer**/
 
 /**Style content for index page**/
-#indexContent ul{
-    font-size: 2em;
-    list-style: none;
+.pageLogo{
+    height: 100%;
+    width: 50%;
     text-align: center;
-    padding-left: 0;
-    padding-top: 20%;
-    position: relative;
-    vertical-align: middle;
+    padding-top: 15em;
 }
 
 /**Main Content**/
-#mainContent{
+.article{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;  
+}
+.leftForm{
+    text-align: left;
+}
+.mainContent{
+    padding-top: 1em;
     color: white;
-    margin: auto;
-    padding: 1em;
     text-align: center;
     width: 100%;
 }
-
-#mainContent #description{
-    margin: 0 auto;
-    margin-bottom: 1em;
-    width: 30em;
+.noStyleRegularList{
+    list-style:none;
+    padding-left:0;
 }
-#mainContent article{
-    display: inline-grid;
-    height: auto;
-    width: 30em;
-    margin:0 1em;
+.pageTitle{
+    margin: 0em;
 }
-#mainContent div{
-    float: left;
-    margin-right: 2em;
-    margin-top: 1em;
-    margin-left: 2.3em;
-    width: 30em;
+.summary{
+    width:30em;  
 }
-#mainContent form{
-    text-align: left;
-}
-#mainContent #game{
-    text-align: center;
-}
-#mainContent h1{
-    margin-top: 1em;
-}
-#mainContent h2{
-    height: 1em;
-}
-#mainContent li{
-    margin: 0.5em 1em;
-}
-#mainContent ul{
-    list-style: none;
-    text-align: left;
-}
-
 /**End of Main Content**/
 
 /**Navigation Style for all pages**/
-#navigationBar{
-    font-size: 1.3em;
-    position: relative;
+.horUlNav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    padding-left: 0;  
+}
+.navigationBar{
+    font-size: 1.3em; 
     text-align: center;
+    width: 100%;
 }
-#navigationBar #title{
-    font-size: 1.5em;
-}
-#navigationBar a:hover{
+.navigationBar a:hover{
     color:grey;
 }
-/**In line inspired by W3 Schools:https://www.w3schools.com/css/tryit.asp?filename=trycss_inline-block_nav**/
-#navigationBar li{
-    display: inline;
-    padding-left: 3em;
-    padding-right: 3em;
+.normalLiNav{
+    width: 10em;
 }
-#navigationBar ul{
-    padding: 0;
-    position: relative;
+.navExpander{
+    display: none;
 }
-@media screen and (max-width: 1310px){
-    #navigationBar li{
-        padding-left: 2em;
-        padding-right: 2em;
+.navTitle{
+    font-size: 1.5em;
+    width: 12em;
+}
+@media screen and (max-width: 800px){
+    .horUlNav{
+        align-items: baseline;
+    }
+    .normalLiNav {
+        display: none;
+    }
+    .navTitle{
+        font-size: 1.5em;
+        width: 8em;
+    }
+    .navExpander {
+        display: flex;
+        width: 1.6em;
+        height: 1em;
+    }
+    .navMobileSpacer{
+        visibility: hidden;
+        width: 33px;
+    }
+    .pageLogo{        
+        padding-top: 10em;
+    }
+}
+@media screen and (max-width: 575px){
+    .navTitle{
+        font-size: 1.5em;
+        width: 5em;
+    }
+    .pageLogo{        
+        padding-top: 8em;
+    }
+}
+@media screen and (max-width: 360px){
+    .navTitle{
+        font-size: 1.5em;
+        width: 3em;
+    }
+    .pageLogo{        
+        padding-top: 6em;
     }
 }
 /**End Navigation**/
@@ -105,6 +122,8 @@ a:link, a:visited{
     color: white;
     text-decoration: none;
 }
+/**Overall page style**/
 body {
     background-color: black; 
+    font-family: tahoma, sans-serif;
 }
