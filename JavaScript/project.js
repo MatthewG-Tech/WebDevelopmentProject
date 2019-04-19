@@ -72,6 +72,7 @@ function slideShow(){
         var slideshowTimer = setInterval(changeSlide, 5000);
     }
 }
+//Change the slide
 function changeSlide(){
     pastSlideIndex=slideshowCounter-1;
     if(slideshowCounter == slideshowImages.length){
@@ -80,10 +81,11 @@ function changeSlide(){
     if(slideshowCounter == 0){
         pastSlideIndex=slideshowImages.length-1;
     }
-    slideshowImages[pastSlideIndex].className = "summary photo slideshowDiv hide";
-    slideshowImages[slideshowCounter].className = "summary photo slideshowDiv show";
+    slideshowImages[pastSlideIndex].className = "slideshowDiv hide";
+    slideshowImages[slideshowCounter].className = "slideshowDiv show";
     slideshowCounter++;
 }
+//When window is resized, close the expanded nav
 function resizedWindow(){
     ulName="mobileExpanded";
     titleName="navTitleExpanded"

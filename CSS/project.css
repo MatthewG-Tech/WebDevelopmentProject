@@ -11,7 +11,7 @@
 }
 /**End Footer**/
 
-/**Style content for index page**/
+/**Style content for home page**/
 .pageLogo{
     width: 70%;
     text-align: center;
@@ -22,7 +22,9 @@
     height: auto;
     width: 100%;
 }
-
+.slideshowDiv{
+    width: 50%;
+}
 /**Main Content**/
 .article{
     display: flex;
@@ -102,54 +104,17 @@
 .normalLiNav{
     width: 10em;
 }
-@media screen and (max-width: 800px){
-    .horUlNav{
-        align-items: baseline;
-    }
-    .mobileExpanded{
-        flex-direction: column;
-    }
-    .mobileExpandedLi{
-        display: flex;
-        padding: 0.5em;
-    }
-    .navExpander {
-        display: flex;
-        width: 2em;
-        height: 1em;
-    }
+/**End Navigation Bar**/
+
+/**Media Query for smaller screens**/
+@media screen and (orientation: portrait) and (max-width: 992px){
     .expandImg{
         width: 100%;
         height: 100%;
     }
-    .navMobileSpacer{
-        display: flex;
-        visibility: hidden;
-        width: 33px;
-        order: -2;
+    .footer{
+        text-align: center;
     }
-    .navTitle{
-        font-size: 1.5em;
-        width: 8em;
-        order: -1;
-    }
-    .navTitleExpanded{
-        font-size: 1.5em;
-        width: 8em;
-        order: -1;
-        border: solid;
-        border-color: white;
-        border-width: 0 0 1px 0;
-    }
-    .normalLiNav {
-        display: none;
-    }
-    .pageTitle{
-        font-size: 3em;
-    }
-}
-/**
-@media screen and (orientation: portrait){
     .horUlNav{
         align-items: baseline;
     }
@@ -162,16 +127,11 @@
     .mobileExpadedLi{
         display: flex;
         padding: 0.5em;
-        font-size: 2em;
+        font-size: 3vw;
     }
     .navExpander {
         display: flex;
-        width: 2em;
-        height: 1em;
-    }
-    .expandImg{
-        width: 100%;
-        height: 100%;
+        width: 9%;
     }
     .navMobileSpacer{
         display: flex;
@@ -181,12 +141,12 @@
     }
     .navTitle{
         font-size: 1.5em;
-        width: 70%;
+        width: 60%;
         order: -1;
     }
     .navTitleExpanded{
         font-size: 1.5em;
-        width: 70%;
+        width: 60%;
         order: -1;
         border: solid;
         border-color: white;
@@ -197,41 +157,39 @@
         width: 14em;
 
     }
+    .slideshowDiv{
+        width: 60%;
+    }
     .summary{
-        width: 100%;
-        font-size: 1.5em;
+        width: 80%;
+        font-size: 2.5vw;
     }
     .pageLogo{
-        width: 80%;
+        width: 70%;
     }
     .pageTitle{
-        font-size: 3em;
+        font-size: 5vw;
     }
-    
-
+    input{
+        width: 15%;
+        height: 1.5vw;
+    }
 }
-@media screen and (max-width: 480px){
-    .summary{
-        width: 100%;
-    }
-    .pageLogo{
-        width: 80%;
-    }
-}**/
-/**End Navigation**/
+/**End Meida Query**/
 
 /**Slideshow**/
-.hide{
+.hide {
     display: none;
-
-}
-.show{
-    display: flex;
-    
+    opacity: 0;
 }
 .image{
     width: 100%;
     height: 100%;
+    transition: 1s;
+}
+.show{
+    display: flex;
+    opacity: 1;
 }
 /**Link style for all pages**/
 a:link, a:visited{
