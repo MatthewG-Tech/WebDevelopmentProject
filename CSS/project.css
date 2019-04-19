@@ -13,11 +13,14 @@
 
 /**Style content for index page**/
 .pageLogo{
-    height: 100%;
-    width: 50%;
+    width: 70%;
     text-align: center;
     padding-top: 6em;
     padding-bottom: 6em;
+}
+.pageLogoImg{
+    height: auto;
+    width: 100%;
 }
 
 /**Main Content**/
@@ -30,6 +33,7 @@
 .leftForm{
     text-align: left;
 }
+
 .mainContent{
     padding-top: 1em;
     color: white;
@@ -107,11 +111,16 @@
     }
     .mobileExpandedLi{
         display: flex;
+        padding: 0.5em;
     }
     .navExpander {
         display: flex;
-        width: 1.6em;
+        width: 2em;
         height: 1em;
+    }
+    .expandImg{
+        width: 100%;
+        height: 100%;
     }
     .navMobileSpacer{
         display: flex;
@@ -135,31 +144,80 @@
     .normalLiNav {
         display: none;
     }
-    .pageLogo{        
-        padding-top: 10em;
-        width: 65%;
+    .pageTitle{
+        font-size: 3em;
     }
-    .slideshowImage{
+}
+/**
+@media screen and (orientation: portrait){
+    .horUlNav{
+        align-items: baseline;
+    }
+    .leftForm{
+        text-align: center;
+    }
+    .mobileExpanded{
+        flex-direction: column;
+    }
+    .mobileExpadedLi{
+        display: flex;
+        padding: 0.5em;
+        font-size: 2em;
+    }
+    .navExpander {
+        display: flex;
+        width: 2em;
+        height: 1em;
+    }
+    .expandImg{
+        width: 100%;
+        height: 100%;
+    }
+    .navMobileSpacer{
+        display: flex;
+        visibility: hidden;
+        width: 33px;
+        order: -2;
+    }
+    .navTitle{
+        font-size: 1.5em;
+        width: 70%;
+        order: -1;
+    }
+    .navTitleExpanded{
+        font-size: 1.5em;
+        width: 70%;
+        order: -1;
+        border: solid;
+        border-color: white;
+        border-width: 0 0 1px 0;
+    }
+    .normalLiNav {
+        display: none;
+        width: 14em;
+
+    }
+    .summary{
+        width: 100%;
+        font-size: 1.5em;
+    }
+    .pageLogo{
         width: 80%;
-        padding-bottom: 5em;
     }
+    .pageTitle{
+        font-size: 3em;
+    }
+    
+
 }
-@media screen and (max-width: 575px){
-    .pageLogo{        
-        padding-top: 8em;
+@media screen and (max-width: 480px){
+    .summary{
+        width: 100%;
     }
-    .slideshowImage{
-        width: 90%;
+    .pageLogo{
+        width: 80%;
     }
-}
-@media screen and (max-width: 360px){
-    .pageLogo{        
-        padding-top: 6em;
-    }
-    .slideshowImage{
-        width: 95%;
-    }
-}
+}**/
 /**End Navigation**/
 
 /**Slideshow**/
@@ -171,8 +229,9 @@
     display: flex;
     
 }
-.slideshowImage{
-    width: 50%;
+.image{
+    width: 100%;
+    height: 100%;
 }
 /**Link style for all pages**/
 a:link, a:visited{

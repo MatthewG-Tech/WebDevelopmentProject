@@ -22,7 +22,7 @@ function navigationElementSetup(){
     output += "<li class=\"navTitle\"><a href=\"index.html\"><img src=\"../Images/Logo.png\" width=\"100%\" height=\"auto\" alt=\"Matthew Guerra Logo\"/></a></li>\n";
     output += "<li class=\"normalLiNav\"><a href=\"production.html\">Production</a></li>\n";
     output += "<li class=\"normalLiNav\"><a href=\"resources.html\">Resources</a></li>\n";
-    output += "<li class=\"navExpander\" id=\"navExpander\"><img src=\"../Images/LogoInitials.png\" width=\"100%\" height=\"auto\" alt=\"Matthew Guerra Logo\"/></li>\n</ul>\n</nav>";
+    output += "<li class=\"navExpander\" id=\"navExpander\"><img class=\"expandImg\" src=\"../Images/LogoInitials.png\" width=\"300px\" height=\"20px\" alt=\"Matthew Guerra Logo\"/></li>\n</ul>\n</nav>";
     navigationElement.innerHTML = output;
 }
 //create footer
@@ -66,7 +66,7 @@ function expandNav(){
 //Add slide show for home page
 function slideShow(){
     slideshowCounter=0;
-    slideshowImages = document.getElementsByClassName("slideshowImage");
+    slideshowImages = document.getElementsByClassName("slideshowDiv");
     if(slideshowImages.length != 0){
         changeSlide();
         var slideshowTimer = setInterval(changeSlide, 5000);
@@ -80,8 +80,28 @@ function changeSlide(){
     if(slideshowCounter == 0){
         pastSlideIndex=slideshowImages.length-1;
     }
-    slideshowImages[pastSlideIndex].className = "summary photo slideshowImage hide";
-    slideshowImages[slideshowCounter].className = "summary photo slideshowImage show";
+    slideshowImages[pastSlideIndex].className = "summary photo slideshowDiv hide";
+    slideshowImages[slideshowCounter].className = "summary photo slideshowDiv show";
     slideshowCounter++;
 }
+function resizedWindow(){
+    ulName="mobileExpanded";
+    titleName="navTitleExpanded"
+    liName="mobileExpadedLi";
+    ulNameChange="horUlNav";
+    titleNameChange="navTitle"
+    liNameChange="normalLiNav";
+    
+    var horUlNav = document.getElementsByClassName(ulName);
+    if(horUlNav.length != 0){
+        horUlNav[0].className = ulNameChange;
+        var title = document.getElementsByClassName(titleName);
+        title[0].className = titleNameChange;
+        var horLiNav = document.getElementsByClassName(liName);
+        for(var i = horLiNav.length-1; i >= 0; i--){
+            horLiNav[i].className = liNameChange;
+        }
+    }
+}
+window.addEventListener("resize",resizedWindow,false);
 window.addEventListener("load",start,false);
